@@ -8,13 +8,13 @@
     </head>
     <body>
         <div id="vue-app">
-            <h1>Keyboard Events</h1>
-            <label>Name:</label>
-            <input type="text" v-on:keyup.enter="logName" v-model="name" />
-            <span>{{ name }}</span>
-            <label>Age:</label>
-            <input type="text" v-on:keyup.alt.enter="logAge" v-model="age" />
-            <span>{{ age }}</span>
+            <h1>Computed Properties</h1>
+            <button v-on:click="a++">Add to A</button>
+            <button v-on:click="b++">Add to B</button>
+            <p>A - {{ a }}</p>
+            <p>B - {{ b }}</p>
+            <p>Age + A = {{ addToA }}</p>
+            <p>Age + B = {{ addToB }}</p>
         </div>
     </body>
 
