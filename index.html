@@ -8,9 +8,9 @@
     </head>
     <body>
         <div id="vue-app">
-            <h1>{{ greet('afternoon') }}</h1>
-            <p>Name: {{ name}}</p>
-            <p>Job: {{ job }}</p>
+            <h1>Data Binding</h1>
+            <a v-bind:href="website">The Net Ninja Website</a>
+            <input type="text" v-bind:value="name" />
         </div>
     </body>
 
