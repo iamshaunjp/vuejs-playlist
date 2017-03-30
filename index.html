@@ -7,14 +7,15 @@
         <script src="https://unpkg.com/vue"></script>
     </head>
     <body>
-        <div id="vue-app">
-            <h1>Computed Properties</h1>
-            <button v-on:click="a++">Add to A</button>
-            <button v-on:click="b++">Add to B</button>
-            <p>A - {{ a }}</p>
-            <p>B - {{ b }}</p>
-            <p>Age + A = {{ addToA }}</p>
-            <p>Age + B = {{ addToB }}</p>
+        <h1>Multiple Vue instances</h1>
+        <div id="vue-app-one">
+            <h2>{{ title }}</h2>
+            <p>{{ greet }}</p>
+        </div>
+        <div id="vue-app-two">
+            <h2>{{ title }}</h2>
+            <p>{{ greet }}</p>
+            <button v-on:click="changeTitle">Change App One Title</button>
         </div>
     </body>
 
