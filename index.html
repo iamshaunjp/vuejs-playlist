@@ -7,13 +7,12 @@
         <script src="https://unpkg.com/vue"></script>
     </head>
     <body>
-        <h1>Templates</h1>
-        <div class="vue-app-one">
-            <greeting></greeting>
-            <greeting></greeting>
+        <h1>Refs</h1>
+        <div id="vue-app-one">
+            <input type="text" ref="input" />
+            <button v-on:click="readRefs">Submit</button>
+            <p>{{ output }}</p>
         </div>
-        <!--<div class="vue-app-one"></div>-->
-
     </body>
 
     <script src="app.js"></script>
