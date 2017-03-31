@@ -1,5 +1,18 @@
-# vuejs-playlist
-Course files for the Vue.js 2 playlist on The Net Ninja YouTube channel
+# cli-project
 
-# How to use
-Each branch represents a specific lesson / video in the playlist. For example, the lesson-9 branch will contain the final state of the code in lesson 9 of the series. Enjoy :).
+> A Vue.js project
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+```
+
+For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
