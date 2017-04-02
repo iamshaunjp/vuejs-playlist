@@ -1,13 +1,19 @@
 <template>
     <footer>
-        <p>{{ copyright }}</p>
+        <p>Copyright 2017 {{ title }}</p>
     </footer>
 </template>
 <script>
 export default {
+    props: {
+      title: {
+        type: String,
+        required: true
+      }
+    },
     data(){
         return{
-            copyright: 'Copyright 2017 Vue Ninjas'
+
         }
     }
 }
