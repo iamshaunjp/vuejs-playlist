@@ -3,9 +3,9 @@
         <h2>Add a New Blog Post</h2>
         <form>
             <label>Blog Title:</label>
-            <input type="text" v-model="blog.title" required />
+            <input type="text" v-model.lazy="blog.title" required />
             <label>Blog Content:</label>
-            <textarea v-model="blog.content"></textarea>
+            <textarea v-model.lazy.trim="blog.content"></textarea>
         </form>
         <div id="preview">
             <h3>Preview blog</h3>
