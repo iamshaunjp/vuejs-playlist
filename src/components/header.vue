@@ -25,11 +25,11 @@ a{
     color: #fff;
     text-decoration: none;
     padding: 6px 8px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 nav{
     background: #444;
-    padding: 14px 0;
+    padding: 20px 0;
     margin-bottom: 40px;
 }
 .router-link-active{

@@ -27,17 +27,6 @@
         <div v-if="submitted">
             <h3>Thanks for adding your post</h3>
         </div>
-        <div id="preview">
-            <h3>Preview blog</h3>
-            <p>Blog title: {{ blog.title }}</p>
-            <p>Blog content:</p>
-            <p style="white-space: pre">{{ blog.content }}</p>
-            <p>Blog Categories:</p>
-            <ul>
-                <li v-for="category in blog.categories">{{ category }}</li>
-            </ul>
-            <p>Author: {{ blog.author }}</p>
-        </div>
     </div>
 </template>
 
@@ -59,11 +48,7 @@ export default {
     },
     methods: {
         post: function(){
-            this.$http.post('http://jsonplaceholder.typicode.com/posts', {
-                title: this.blog.title,
-                body: this.blog.content,
-                userId: 1
-            }).then(function(data){
+            this.$http.post('https://nn-vue-playlist.firebaseio.com/posts.json', this.blog).then(function(data){
                 console.log(data);
                 this.submitted = true;
             });
