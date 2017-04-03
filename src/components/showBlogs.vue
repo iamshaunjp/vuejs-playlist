@@ -3,7 +3,7 @@
         <h1>All Blog Articles</h1>
         <input type="text" v-model="search" placeholder="search blogs" />
         <div v-for="blog in filteredBlogs" class="single-blog">
-            <h2>{{ blog.title }}</h2>
+            <router-link v-bind:to="'/blog/' + blog.id"><h2>{{ blog.title }}</h2></router-link>
             <article>{{ blog.body }}</article>
         </div>
     </div>
@@ -39,5 +39,10 @@ export default {
     margin: 20px 0;
     box-sizing: border-box;
     background: #eee;
+}
+
+#show-blogs a{
+    color: #444;
+    text-decoration: none;
 }
 </style>
