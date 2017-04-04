@@ -24,16 +24,16 @@ li{
 a{
     color: #fff;
     text-decoration: none;
-    padding: 6px 8px;
+    padding: 12px;
     border-radius: 5px;
 }
 nav{
-    background: #444;
-    padding: 20px 0;
+    background: crimson;
+    padding: 30px 0;
     margin-bottom: 40px;
 }
 .router-link-active{
-    background: #eee;
+    background: rgba(255,255,255,0.8);
     color: #444;
 }
 </style>
