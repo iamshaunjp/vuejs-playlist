@@ -9,13 +9,13 @@
             <div id="checkboxes">
                 <p>Blog Categories:</p>
                 <label>Ninjas</label>
-                <input type="checkbox" value="ninjas" v-model="blog.categories" />
+                <input type="checkbox" value="Ninjas" v-model="blog.categories" />
                 <label>Wizards</label>
-                <input type="checkbox" value="wizards" v-model="blog.categories" />
+                <input type="checkbox" value="Wizards" v-model="blog.categories" />
                 <label>Mario</label>
-                <input type="checkbox" value="mario" v-model="blog.categories" />
+                <input type="checkbox" value="Mario" v-model="blog.categories" />
                 <label>Cheese</label>
-                <input type="checkbox" value="cheese" v-model="blog.categories" />
+                <input type="checkbox" value="Cheese" v-model="blog.categories" />
             </div>
         </form>
         <div id="preview">
