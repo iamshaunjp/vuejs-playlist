@@ -2,9 +2,9 @@
     <div id="show-blogs">
         <h1>All Blog Articles</h1>
         <input type="text" v-model="search" placeholder="search blogs" />
-        <div v-for="blog in filteredBlogs" class="single-blog">
-            <router-link v-bind:to="'/blog/' + blog.id"><h2>{{ blog.title }}</h2></router-link>
-            <article>{{ blog.content }}</article>
+        <div v-for="blog in blogs" class="single-blog" :key="blog.id">
+            <router-link v-bind:to="'/blog/' + blog.id"><h2>{{ blog.fr }}</h2></router-link>
+            <article>{{ blog.da }}</article>
         </div>
     </div>
 </template>
@@ -21,16 +21,16 @@ export default {
         }
     },
     created() {
-        this.$http.get('https://nn-vue-playlist.firebaseio.com/posts.json').then(function(data){
+        this.$http.get(this.dbUrl).then(function(data){
             return data.json()
         }).then(function(data){
             var blogsArray = [];
             for (let key in data){
                 data[key].id = key;
-                blogsArray.push(data[key]);
+                blogsArray.push(data[key]); 
             }
             this.blogs = blogsArray;
-            //console.log(this.blogs);
+            console.log(this.blogs);
         });
     },
     mixins: [searchMixin]
