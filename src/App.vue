@@ -11,6 +11,9 @@ import showBlogs from './components/showBlogs.vue';
 import header from './components/header.vue';
 
 export default {
+
+
+
     components: {
         'app-header': header
     },

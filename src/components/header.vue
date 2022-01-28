@@ -28,7 +28,7 @@ a{
     border-radius: 5px;
 }
 nav{
-    background: crimson;
+    background: #668800;
     padding: 30px 0;
     margin-bottom: 40px;
 }
