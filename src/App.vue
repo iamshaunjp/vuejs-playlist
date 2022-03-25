@@ -1,17 +1,18 @@
 <template>
     <div>
+        <!-- use instead v-slot because slot syntax is deprecated -->
         <form-helper>
-            <div slot="form-header">
+            <template v-slot:form-header>
                 <h3>This is the title of a form</h3>
                 <p>This is some info about the form</p>
-            </div>
-            <div slot="form-fields">
+            </template>
+            <template v-slot:form-fields>
                 <input type="text" placeholder="name" required />
                 <input type="password" placeholder="password" required />
-            </div>
-            <div slot="form-controls">
+            </template>
+            <template v-slot:form-controls>
                 <button v-on:click="handleSubmit">Submit</button>
-            </div>
+            </template>
         </form-helper>
     </div>
 </template>
