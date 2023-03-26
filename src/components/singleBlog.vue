@@ -2,7 +2,6 @@
     <div id="single-blog">
         <h1>{{ blog.title }}</h1>
         <article>{{ blog.body }}</article>
-        </div>
     </div>
 </template>
 
